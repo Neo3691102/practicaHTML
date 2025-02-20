@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>HTML 1</title>
+  </head>
+  <body>
+    <nav>
+      <img id="logok" src="img/logok.png" alt="logonav" />
+      <h1>Recetario</h1>
+      <ul class="texto-nav">
+        <a href="#header"><li>Inicio</li></a>
+        <a href="#galeria"><li>Galeria</li></a>
+        <a href="#formulario"><li>Queremos escucharte</li></a>
+        <a href="#footer"><li>Contacto</li></a>
+      </ul>
+    </nav>
+
+    <header id="header">
+      <h2>¿Que puedes encontrar?</h2>
+      <p>
+        Dentro de este sitio puedes encontrar algunas recetas de algunos
+        platillos para que las puedas hacer desde la comodidad de tu casa
+      </p>
+    </header>
+    <main>
+      <section id="galeria">
+        <h3>Galeria de imagenes</h3>
+        <div class="galeria">
+          <img src="img/pescado1.jpg" alt="pescado frito" />
+          <img src="img/coctel.jpg" alt="coctel" />
+          <img src="img/comchina.jpg" alt="comchina" />
+          <img src="img/comjapon.jpg" alt="comjpon" />
+          <img src="img/Makizushi.jpg" alt="sushi" />
+          <img src="img/ramen.jpg" alt="ramen" />
+        </div>
+      </section>
+
+      <section class="seccion">
+        <img
+          width="300"
+          height="150"
+          src="assets/recipe-svgrepo-com.svg"
+          alt="icono receta"
+        />
+
+        <blockquote>
+          <em
+            >"El único modo de hacer un gran trabajo es amar lo que haces." -
+            <cite>Steve Jobs</cite></em
+          >
+        </blockquote>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/P2Rh8sINTBk?si=MzJlzLuwRoMdoj5Y"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div>
+          <audio controls>
+            <source
+              src="assets/Mecano  Hijo de la Luna  EASY Piano Tutorial.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </div>
+      </section>
+
+      <section class="seccion">
+        <h3>Espaguetti Alfredo</h3>
+
+        <img width="400" src="img/espaguetis.jpg" alt="espaguetti alfredo" />
+        <p>
+          En esta receta aprenderás como puedes preparar el
+          <strong>espaguetti alfredo</strong> que es un platillo que posee
+          inmensa cantidad de sabores.
+        </p>
+        <div class="enlace">
+          <a href="espaguetti.html" target="_blank"
+            ><em>¿Cómo puedo prepararlo?</em></a
+          >
+        </div>
+
+        <!--/*enlace a pagina espaguetti.html*/ -->
+      </section>
+
+      <section class="seccion">
+        <h3>Filetes de lomo en salsa con champiñones</h3>
+
+        <img width="400" src="img/filetes.jpg" alt="filetes de lomo" />
+        <p>
+          Hoy tenemos una deliciosa receta de
+          <strong>filetes de lomo</strong> en salsa acompañados con una
+          guarnición de champiñones. Cuando pensamos en qué poner para comer al
+          día siguiente, a veces cuesta mucho y más que nada es por lo tedioso
+          que es estar comiendo las mismas cosas una semana tras otra.
+        </p>
+        <div class="enlace">
+          <a href="filetes.html" target="_blank"
+            ><em>¿Cómo puedo preparar este platillo?</em></a
+          >
+        </div>
+
+        <!--/*enlace a pagina de filetes.html*/ -->
+      </section>
+
+      <section class="seccion">
+        <!--Formulario-->
+        <h4>Tu opinión es importante</h4>
+        <form id="formulario" action="https://ebac.mx/cursos" method="post">
+          <fieldset>
+            <legend>
+              <small
+                >Dejanos tus datos para suscribirte al newsletter y enviarte más
+                recetas!</small
+              >
+            </legend>
+            <div class="inputnombre">
+              <label for="name"><i>Nombre completo: </i> </label>
+              <input type="text" name="name" id="name" required />
+            </div>
+
+            <label for="email"><i>Correo electrónico: </i></label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend><small>Califica tu experiencia</small></legend>
+            <input
+              type="radio"
+              id="excelente"
+              name="evaluacionexperiencia"
+              value="excelente"
+              checked
+            />
+            <label for="excelente"><em>Excelente</em></label>
+            <input
+              type="radio"
+              id="buena"
+              name="evaluacionexperiencia"
+              value="buena"
+            />
+            <label for="buena"><em>Buena</em></label>
+
+            <input
+              type="radio"
+              id="regular"
+              name="evaluacionexperiencia"
+              value="regular"
+            />
+            <label for="regular"><em>Regular</em></label>
+
+            <input
+              type="radio"
+              name="evaluacionexperiencia"
+              id="mala"
+              value="mala"
+            />
+            <label for="mala"><em>Mala</em></label>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>
+              <small>¿Que clase de recetas te gustaría ver en el futuro?</small>
+            </legend>
+            <input
+              type="checkbox"
+              name="recetas[]"
+              id="postres"
+              value="postres"
+              checked
+            />
+            <label for="postres"><em>Postres</em></label>
+
+            <input type="checkbox" name="recetas[]" id="pizza" value="pizza" />
+            <label for="pizza"><em>Pizza</em></label>
+
+            <input
+              type="checkbox"
+              name="recetas[]"
+              id="coctelfrutas"
+              value="coctelfrutas"
+            />
+            <label for="coctelfrutas"><em>Cocteles de fruta</em></label>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>
+              <small
+                >Compartenos tus fotografías de tus platillos, nos
+                encanta.</small
+              >
+            </legend>
+            <input type="file" />
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend><small>Cuentanos acerca de tus gustos</small></legend>
+            <label for="gustos"><em>Categoria de tu comida favorita</em></label>
+            <select name="tipodecomidafavorita" id="gustos" required>
+              <option value="" disabled selected>
+                Selecciona una opcion...
+              </option>
+              <option value="cantonesa">Comida cantonesa</option>
+              <option value="china">Comida china</option>
+              <option value="arabe">Comida árabe</option>
+              <option value="mexicana">Comida mexicana</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>
+              <small
+                >Dejanos tus comentarios y comentanos sobre tu experiencia
+                preparando algún platillo</small
+              >
+            </legend>
+
+            <textarea cols="50" name="comentarios" id="comentarios"></textarea>
+          </fieldset>
+          <input class="btnenviar" type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>
+        <u>Creado por <strong>Nestor Castañeda 2025</strong></u
+        >&copy;
+      </p>
+      <p>Visita nuestras redes sociales o comunicate a través de Whatsapp!</p>
+      <div class="icons-container">
+        <a href="https://www.facebook.com/">
+          <box-icon
+            id="facebook"
+            color="#fff8dc"
+            type="logo"
+            name="facebook-circle"
+          ></box-icon>
+        </a>
+        <a href="https://www.instagram.com/"
+          ><box-icon
+            id="instagram"
+            color="#fff8dc"
+            type="logo"
+            name="instagram"
+          ></box-icon
+        ></a>
+        <a href="https://www.whatsappweb.com/"
+          ><box-icon
+            id="whatsapp"
+            color="#fff8dc"
+            type="logo"
+            name="whatsapp"
+          ></box-icon
+        ></a>
+      </div>
+    </footer>
+
+    <!--entidad de copyright-->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
