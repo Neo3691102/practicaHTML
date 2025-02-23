@@ -74,6 +74,7 @@ iframe,
 audio {
   display: block;
   margin: var(--elementmargin) auto;
+  width: 100%;
 }
 
 form {
@@ -89,7 +90,7 @@ section:first-child {
   justify-content: center;
   align-items: center;
   margin: 0 auto 0 auto;
-  width: 900px;
+  width: 100%;
 }
 
 .galeria img {
@@ -104,24 +105,6 @@ section:first-child {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 39px;
-}
-
-@media screen and (max-width: 768px) {
-  .galeria {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .galeria {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .galeria img {
-    width: 100px;
-    height: 100px;
-  }
 }
 
 nav {
@@ -168,11 +151,13 @@ nav ul {
   font-weight: 400;
 }
 
-header {
+.banner {
+  width: 100%;
+  overflow-x: hidden;
   background-color: #8b4513;
   height: 540px;
   padding: 30px;
-  width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,12 +177,6 @@ header > p {
   font-size: 18px;
 }
 
-@media screen and (max-width: 425px) {
-  header {
-    width: 450px;
-  }
-}
-
 section:nth-child(2) > h3 {
   padding: 18px;
   border-top: 2px solid #8b4513;
@@ -213,7 +192,7 @@ section > h3 {
 
 .seccion {
   display: block;
-  max-width: 600px;
+  width: 100%;
   height: auto;
   margin: var(--elementmargin) auto;
   padding-top: 10px;
@@ -340,4 +319,50 @@ footer p {
 #whatsapp:hover {
   background-color: #25d366;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 50em) {
+  .banner {
+    width: auto;
+    background-color: pink;
+    overflow-x: hidden;
+  }
+
+  .galeria {
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  nav h1 {
+    left: -70px;
+  }
+}
+@media screen and (max-width: 25.56em) {
+  .banner {
+    width: 100;
+    background-color: pink;
+  }
+
+  .banner h2 {
+    text-align: center;
+  }
+
+  #galeria {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .galeria img {
+    width: 50px;
+    height: 50px;
+  }
 }
