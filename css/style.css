@@ -347,7 +347,6 @@ footer p {
 }
 
 #instagram {
-  background-color: #8b4513;
   width: 30px;
   height: 30px;
 }
@@ -500,5 +499,67 @@ footer p {
   .btnenviar:hover {
     background-color: #d6a58d;
     cursor: pointer;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #754930;
+  }
+
+  ul,
+  ol {
+    color: #fff8dc;
+  }
+
+  section > h3 {
+    color: #fff8dc;
+
+    border-top: 2px solid #fff8dc;
+    border-bottom: 2px solid #fff8dc;
+  }
+
+  h3,
+  h4 {
+    color: #fff8dc;
+  }
+
+  p {
+    color: #fff8dc;
+  }
+  blockquote {
+    color: #fff8dc;
+  }
+  .banner {
+    background-color: #49280f;
+  }
+
+  form {
+    color: #fff8dc;
+    border: 3px solid #fff8dc;
+  }
+
+  .fieldset {
+    border-top: 2px solid #fff8dc;
+  }
+
+  #comentarios {
+    border: 3px solid #49280f;
+  }
+
+  legend {
+    color: #fff8dc;
+  }
+
+  .btnenviar {
+    background-color: #49280f;
+  }
+
+  footer {
+    background-color: #49280f;
+  }
+
+  .icons-container {
+    background-color: #49280f;
   }
 }
